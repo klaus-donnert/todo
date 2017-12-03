@@ -16,7 +16,7 @@
     </div>
 
     <footer id="footer" class="text-center">
-        <p>Copyright &copy; 2017 Acme</p>
+        <p>Copyright &copy; 2017 Klaus Donnert</p>
     </footer>
 </body>
 </html>
