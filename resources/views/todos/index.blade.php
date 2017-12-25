@@ -7,7 +7,7 @@
             <div class="well">
                 <h3><a href="todo/{{$todo->id}}">{{$todo->text}}</a></h3>
                 <h4><a href="todo/{{$todo->id}}">{{$todo->body}}</a></h4>
-                <div class="label label-danger" style="font-size: 50%">{{$todo->due}}</div>
+                <a href="todo/{{$todo->id}}" class="label label-info" style="font-size: 70%">{{$todo->due}}</a>
 
 
             </div>

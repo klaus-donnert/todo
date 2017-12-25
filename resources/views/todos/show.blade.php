@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <h3><a href="todo/{{$todo->id}}">{{$todo->text}}</a>&nbsp;</h3>
-    <p><a href="todo/{{$todo->id}}">{{$todo->body}}</a>&nbsp;</p>
-    <div class="label label-danger" style="font-size: 70%">{{$todo->due}}</div>
+    <h3><a href="/todo/{{$todo->id}}/edit">{{$todo->text}}</a>&nbsp;</h3>
+    <p><a href="/todo/{{$todo->id}}/edit">{{$todo->body}}</a>&nbsp;</p>
+    <a href="/todo/{{$todo->id}}/edit" class="label label-info" style="font-size: 70%">{{$todo->due}}</a>
     <br>
     <br>
     <a href="/todo/{{$todo->id}}/edit" class="btn btn-default">Edit</a>

@@ -41,9 +41,9 @@ class TodosController extends Controller
         ]);
 
         $todo = new Todo;
-        $todo->text = $request->input('text');
-        $todo->body = $request->input('body');
-        $todo->due = $request->input('due');
+        $todo->text = $request->input('text')?:'';
+        $todo->body = $request->input('body')?:'';
+        $todo->due = $request->input('due')?:'';
 
         $todo->save();
 
@@ -84,9 +84,9 @@ class TodosController extends Controller
     public function update(Request $request, $id)
     {
         $todo = Todo::find($id);
-        $todo->text = $request->input('text');
-        $todo->body = $request->input('body');
-        $todo->due = $request->input('due');
+        $todo->text = $request->input('text')?:'';
+        $todo->body = $request->input('body')?:'';
+        $todo->due = $request->input('due')?:'';
 
         $todo->save();
 
